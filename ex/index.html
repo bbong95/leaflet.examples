@@ -1,0 +1,242 @@
+---
+
+---
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="theme-color" content="#000000">
+    <meta name="description" content="{{ site.description }}">
+    <meta name="author" content="{{ site.author }}">
+    <title>{{ site.name }}</title>
+    {{ seo }}
+    <meta name="og:image" content="{{ '/assets/img/play-ep-screenshot.jpg' | relative_url }}">
+
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.css">
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.css">
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/MarkerCluster.Default.css">
+    <link rel="stylesheet" href="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.css">
+    <link rel="stylesheet" href="{{ 'assets/leaflet-groupedlayercontrol/leaflet.groupedlayercontrol.css' | relative_url }}">
+    <link rel="stylesheet" href="{{ 'assets/css/app.css' | relative_url }}">
+
+    <link rel="apple-touch-icon" sizes="76x76" href="{{ 'assets/img/favicon-76.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="120x120" href="{{ 'assets/img/favicon-120.png' | relative_url }}">
+    <link rel="apple-touch-icon" sizes="152x152" href="{{ 'assets/img/favicon-152.png' | relative_url }}">
+    <link rel="icon" sizes="196x196" href="{{ 'assets/img/favicon-196.png' | relative_url }}">
+    <link rel="icon" type="image/x-icon" href="{{ 'assets/img/favicon.ico' | relative_url }}">
+  </head>
+
+  <body>
+    <div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <div class="navbar-icon-container">
+            <a href="#" class="navbar-icon pull-right visible-xs" id="nav-btn"><i class="fa fa-bars fa-lg white"></i></a>
+            <a href="#" class="navbar-icon pull-right visible-xs" id="sidebar-toggle-btn"><i class="fa fa-search fa-lg white"></i></a>
+          </div>
+          <a class="navbar-brand" href="/">{{ site.name }}</a>
+          <span class="label label-primary pull-right" style="margin-top: 1em;"><a target="_blank" href="http://www.ep.go.kr/CmsWeb/resource/image/epmain/sub2/town_large.jpg" style="color: #fff;">낭만 버전</a></span>
+        </div>
+        <div class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="about-btn"><i class="fa fa-question-circle white"></i>&nbsp;&nbsp;소개</a></li>
+            <li class="dropdown">
+                <a class="dropdown-toggle" id="downloadDrop" href="#" role="button" data-toggle="dropdown"><i class="fa fa-cloud-download white"></i>&nbsp;&nbsp;내려받기 <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li><a href="data/ep-dong.geojson" download="ep-dong.geojson" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;동 경계</a></li>
+                  <li><a href="data/1-hub-estate.geojson" download="1-hub-estate.geojson" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;1. 허브,단지</a></li>
+                  <li><a href="data/2-public-institutions.geojson" download="2-public-institutions.geojson" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;2. 공공기관</a></li>
+                  <li><a href="data/3-community.geojson" download="3-community.geojson" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;3. 커뮤니티</a></li>
+                  <li><a href="data/4-social-economy.geojson" download="4-social-economy.geojson" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;4. 사회적 경제조직</a></li>
+                  <li><a href="data/5-npo-culture.geojson" download="5-npo-culture.geojson" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;5. NPO,문화예술단체</a></li>
+                  <li><a href="data/6-town.geojson" download="6-town.geojson" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;6. 마을공동체</a></li>
+                  <li><a href="data/7-alt-regidential.geojson" download="7-alt-regidential.geojson" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;7. 대안주거공간</a></li>
+                  <li><a href="data/8-co-parenting-library.geojson" download="8-co-parenting-library.geojson" target="_blank" data-toggle="collapse" data-target=".navbar-collapse.in"><i class="fa fa-download"></i>&nbsp;&nbsp;8. 공동육아,작은도서관</a></li>
+                  
+                </ul>
+            </li>
+            <li class="hidden-xs"><a href="#" data-toggle="collapse" data-target=".navbar-collapse.in" id="list-btn"><i class="fa fa-list white"></i>&nbsp;&nbsp;목록</a></li>
+          </ul>
+        </div><!--/.navbar-collapse -->
+      </div>
+    </div>
+
+    <div id="container">
+      <div id="sidebar">
+        <div class="sidebar-wrapper">
+          <div class="panel panel-default" id="features">
+            <div class="panel-heading">
+              <h3 class="panel-title">구분
+              <button type="button" class="btn btn-xs btn-default pull-right" id="sidebar-hide-btn"><i class="fa fa-chevron-left"></i></button></h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-xs-8 col-md-8">
+                  <input type="text" class="form-control search" placeholder="검색" />
+                </div>
+                <div class="col-xs-4 col-md-4">
+                  <button type="button" class="btn btn-primary pull-right sort" data-sort="feature-name" id="sort-btn"><i class="fa fa-sort"></i>&nbsp;&nbsp;정렬하기</button>
+                </div>
+              </div>
+            </div>
+            <div class="sidebar-table">
+              <table class="table table-hover" id="feature-list">
+                <thead class="hidden">
+                  <tr>
+                    <th>아이콘</th>
+                  <tr>
+                  <tr>
+                    <th>이름</th>
+                  <tr>
+                  <tr>
+                    <th>Chevron</th>
+                  <tr>
+                </thead>
+                <tbody class="list"></tbody>
+              </table>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div id="map"></div>
+    </div>
+    <div id="loading">
+      <div class="loading-indicator">
+        <div class="progress progress-striped active">
+          <div class="progress-bar progress-bar-info progress-bar-full"></div>
+        </div>
+      </div>
+    </div>
+
+    <div class="modal fade" id="aboutModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-lg">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">소개</h4>
+          </div>
+          <div class="modal-body">
+            <article class="markdown-body entry-content" itemprop="text">
+              <h1>은평 살맛나는 마을 지도! <small>by <a href="{{ site.org_url }}">코드포은평</a></small></h1>
+
+              <p>&nbsp;</p>
+
+              <p>은평구에서는 거의 매년 다양한 주제로 지역에서 활발하게 활동하는 커뮤니티 및 단체들을 지도로 만들어 주민들에게 알리고 있습니다. 이 프로젝트는 2016년 2월 제작한 마을 공동체 지도를 보고 이런게 있었다니, 웹에 떠 있으면 더 많은 사람들이 볼 수 있지 않을까 하는 생각에서 시작됐습니다.</p>
+
+              <p>&nbsp;</p>
+
+              <strong>지역 마을 공동체 지도 예시</strong>
+              <ul>
+              <li>2016년 마을 공동체 지도 <a href="http://www.ep.go.kr/CmsWeb/resource/image/epmain/sub2/town_large.jpg">http://www.ep.go.kr/CmsWeb/resource/image/epmain/sub2/town_large.jpg</a> - 출처 <a href="http://www.ep.go.kr/CmsWeb/viewPage.req?idx=PG0000003073">http://www.ep.go.kr/CmsWeb/viewPage.req?idx=PG0000003073</a></li>
+              <li>2013년 8월호 <a href="http://azine.kr/m/data//201307291126013236.png">http://azine.kr/m/data//201307291126013236.png</a></li>
+              <li>2014년 은평마을학교1-2 <a href="http://edu.eunpyeong.go.kr/data/formimg/2014%EC%9D%80%ED%8F%89%EB%A7%88%EC%9D%84%ED%95%99%EA%B5%901-2.jpg">http://edu.eunpyeong.go.kr/data/formimg/2014은평마을학교1-2.jpg</a></li>
+              </ul>
+
+              <a href="https://github.com/code-for-ep/play-ep/blob/gh-pages/README.md">자세히 보기</a>
+            </article>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="legendModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">지도 범례</h4>
+          </div>
+          <div class="modal-body">
+            <p>범례 설명 입력...</p>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">닫기</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="loginModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog modal-sm">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">로그인</h4>
+          </div>
+          <div class="modal-body">
+            <form id="contact-form">
+              <fieldset>
+                <div class="form-group">
+                  <label for="name">아이디:</label>
+                  <input type="text" class="form-control" id="username">
+                </div>
+                <div class="form-group">
+                  <label for="email">비밀번호:</label>
+                  <input type="password" class="form-control" id="password">
+                </div>
+              </fieldset>
+            </form>
+          </div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">취소</button>
+            <button type="submit" class="btn btn-primary" data-dismiss="modal">로그인</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="featureModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title text-primary" id="feature-title"></h4>
+          </div>
+          <div class="modal-body" id="feature-info"></div>
+          <div class="modal-footer">
+            <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <div class="modal fade" id="attributionModal" tabindex="-1" role="dialog">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button class="close" type="button" data-dismiss="modal" aria-hidden="true">&times;</button>
+            <h4 class="modal-title">
+              개발: <a href='{{ site.org_url }}'>코드포은평</a>
+            </h4>
+          </div>
+          <div class="modal-body">
+            <div id="attribution"></div>
+          </div>
+        </div><!-- /.modal-content -->
+      </div><!-- /.modal-dialog -->
+    </div><!-- /.modal -->
+
+    <script src="https://code.jquery.com/jquery-2.1.4.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/typeahead.js/0.10.5/typeahead.bundle.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/handlebars.js/3.0.3/handlebars.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/list.js/1.1.1/list.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/leaflet/0.7.7/leaflet.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-markercluster/v0.4.0/leaflet.markercluster.js"></script>
+    <script src="https://api.tiles.mapbox.com/mapbox.js/plugins/leaflet-locatecontrol/v0.43.0/L.Control.Locate.min.js"></script>
+    <script src="{{ 'assets/leaflet-groupedlayercontrol/leaflet.groupedlayercontrol.js' | relative_url }}"></script>
+    <script src="{{ 'assets/Leaflet.KoreanTmsProviders/lib/proj4-compressed.js' | relative_url }}"></script>
+    <script src="{{ 'assets/Leaflet.KoreanTmsProviders/lib/proj4leaflet.js' | relative_url }}"></script>
+    <script src="{{ 'assets/Leaflet.KoreanTmsProviders/src/Leaflet.KoreanTmsProviders.js' | relative_url }}"></script>
+    <script src="{{ 'assets/js/app.js' | relative_url }}"></script>
+  </body>
+</html>

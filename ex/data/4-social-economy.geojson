@@ -1,0 +1,341 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.89606,
+          37.58254
+        ]
+      },
+      "properties": {
+        "NAME": "물빛마을 청국장",
+        "ADDRESS1": "서울 은평구 은평터널로 8",
+        "TEL": "02-372-7600 ",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.909871,
+          37.60001
+        ]
+      },
+      "properties": {
+        "NAME": "동네빵네협동조합 - 깜빠뉴베이커리",
+        "ADDRESS1": "서울 은평구 갈현로 15",
+        "TEL": "02-386-3833",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.910197,
+          37.604464
+        ]
+      },
+      "properties": {
+        "NAME": "똘레랑스",
+        "ADDRESS1": "서울특별시 은평구 불광천길 591-18 ",
+        "TEL": "02-352-2477 ",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.915461,
+          37.599839
+        ]
+      },
+      "properties": {
+        "NAME": "은평두레생협 응암역점",
+        "ADDRESS1": "서울특별시 은평구 연서로 9",
+        "TEL": "02-356-6233 ",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.907962,
+          37.605161
+        ]
+      },
+      "properties": {
+        "NAME": "해피워크 해피워커",
+        "ADDRESS1": "서울 은평구 갈현로 7길 23-1",
+        "TEL": "02-388-8806",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.920441,
+          37.59842
+        ]
+      },
+      "properties": {
+        "NAME": "동네빵네협동조합 - 빵빚는명가",
+        "ADDRESS1": "서울 은평구 응암로 294",
+        "TEL": "02-307-5773",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.926724,
+          37.600773
+        ]
+      },
+      "properties": {
+        "NAME": "은평 e-품앗이",
+        "ADDRESS1": "서울특별시 은평구 응암1동 96-3",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.92979,
+          37.602205
+        ]
+      },
+      "properties": {
+        "NAME": "화음(여성건강카페)",
+        "ADDRESS1": "서울특별시 은평구 녹번동 은평로 195",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.931729,
+          37.602099
+        ]
+      },
+      "properties": {
+        "NAME": "꽈배기나라",
+        "ADDRESS1": "서울특별시 은평구 녹번동 73-8",
+        "TEL": "02-355-5959 ",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.928217,
+          37.601994
+        ]
+      },
+      "properties": {
+        "NAME": "꼬부랑콩나물국밥집",
+        "ADDRESS1": "서울특별시 은평구 은평로 185",
+        "TEL": "02-352-9983",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.915945,
+          37.612071
+        ]
+      },
+      "properties": {
+        "NAME": "아빠맘순두부 식당",
+        "ADDRESS1": "서울특별시 은평구 서오릉로 149-8",
+        "TEL": "02-373-0021",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.915988,
+          37.611565
+        ]
+      },
+      "properties": {
+        "NAME": "전환마을은평 밥풀꽃",
+        "ADDRESS1": "서울 은평구 연서로15길 8",
+        "TEL": "02-387-1129",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.914299,
+          37.614014
+        ]
+      },
+      "properties": {
+        "NAME": "은평두레생협 사무실(은평두레생협 구산점)",
+        "ADDRESS1": "서울특별시 은평구 서오릉로 174",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.910522,
+          37.615351
+        ]
+      },
+      "properties": {
+        "NAME": "동네빵네협동조합 - 박성원 제과점",
+        "ADDRESS1": "서울 은평구 서오릉로 210",
+        "TEL": "02-386-6146",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.917145,
+          37.605277
+        ]
+      },
+      "properties": {
+        "NAME": "역마을 협동조합",
+        "ADDRESS1": "서울 은평구 역촌동 21-33",
+        "TEL": "02-386-5588",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.917424,
+          37.624334
+        ]
+      },
+      "properties": {
+        "NAME": "동네빵네협동조합 - 하얀풍차",
+        "ADDRESS1": "서울 은평구 통일로87길 17",
+        "TEL": "02-386-7807",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.933753,
+          37.608603
+        ]
+      },
+      "properties": {
+        "NAME": "은평두레생협 혁신파크점",
+        "ADDRESS1": "서울 은평구 통일로 684",
+        "TEL": "070-4725-4288",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.933753,
+          37.608603
+        ]
+      },
+      "properties": {
+        "NAME": "두꺼비하우징",
+        "ADDRESS1": "서울 은평구 통일로 684",
+        "TEL": "02-383-2025",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.918158,
+          37.640058
+        ]
+      },
+      "properties": {
+        "NAME": "한살림 구파발점",
+        "ADDRESS1": "서울 은평구 진관3로 15-35 은평뉴타운 구파발 금호어울림아파트 제1001동 103호",
+        "TEL": "02-358-4700",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.921164,
+          37.641015
+        ]
+      },
+      "properties": {
+        "NAME": "은평두레생협 진관점",
+        "ADDRESS1": "서울 은평구 진관동 22 은평뉴타운 구파발9단지 래미안아파트 909동 1층상가 104호",
+        "TEL": "02-352-6233",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.927276,
+          37.623194
+        ]
+      },
+      "properties": {
+        "NAME": "바늘한땀협동조합",
+        "ADDRESS1": "서울 은평구 연서로 302 2층",
+        "TEL": "02-353-1327",
+        "URL": ""
+      }
+    }
+  ]
+}

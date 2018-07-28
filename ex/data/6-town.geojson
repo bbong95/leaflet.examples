@@ -1,0 +1,149 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.8960537,
+          37.5814673
+        ]
+      },
+      "properties": {
+        "NAME": "형제대장간",
+        "ADDRESS1": "서울 은평구 수색동 102-49",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9370337,
+          37.5985134
+        ]
+      },
+      "properties": {
+        "NAME": "응암동 산골마을",
+        "ADDRESS1": "서울특별시 은평구 응암동 34-4",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9382339,
+          37.5989215
+        ]
+      },
+      "properties": {
+        "NAME": "녹번동 산골마을",
+        "ADDRESS1": "서울특별시 은평구 녹번동 71-40",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9376815,
+          37.6519977
+        ]
+      },
+      "properties": {
+        "NAME": "북한산성 마을공동체",
+        "ADDRESS1": "서울특별시 은평구 진관동 327-24 ",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9157497,
+          37.6184775
+        ]
+      },
+      "properties": {
+        "NAME": "갈마루북카페",
+        "ADDRESS1": "서울특별시 은평구 갈현동 502-3",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9108847,
+          37.6222035
+        ]
+      },
+      "properties": {
+        "NAME": "공동육아조합 소리나는어린이집",
+        "ADDRESS1": "서울특별시 은평구 갈현동 267-72",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9056852,
+          37.596305
+        ]
+      },
+      "properties": {
+        "NAME": "산새마을",
+        "ADDRESS1": "서울특별시 은평구 신사동 237-472 ",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9270734,
+          37.6111673
+        ]
+      },
+      "properties": {
+        "NAME": "불광대장간",
+        "ADDRESS1": "서울 은평구 대조동 80-7",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9211013,
+          37.6058185
+        ]
+      },
+      "properties": {
+        "NAME": "역촌동 안심마을",
+        "ADDRESS1": "서울시 은평구 역촌동 17-51 ",
+        "TEL": "",
+        "URL": ""
+      }
+    }
+  ]
+}

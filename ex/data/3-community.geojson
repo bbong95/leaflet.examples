@@ -1,0 +1,469 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.885322,
+          37.58265
+        ]
+      },
+      "properties": {
+        "NAME": "지중해소나무",
+        "ADDRESS1": "서울시 은평구 수색로 271",
+        "TEL": "02-302-1183",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9262204,
+          37.6011376
+        ]
+      },
+      "properties": {
+        "NAME": "예술수색단",
+        "ADDRESS1": "서울특별시 은평구 녹번동 48-5",
+        "TEL": "010-3210-1918",
+        "URL": "http://susaek.kr/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.896909,
+          37.5963212
+        ]
+      },
+      "properties": {
+        "NAME": "산새마을회관",
+        "ADDRESS1": "서울특별시 은평구 가좌로11나길 19",
+        "TEL": "070-4421-7826",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.8982327,
+          37.584329
+        ]
+      },
+      "properties": {
+        "NAME": "시루뫼무용단",
+        "ADDRESS1": "서울특별시 은평구 증산동 187-19 ",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.8988099,
+          37.582717
+        ]
+      },
+      "properties": {
+        "NAME": "K-TOP댄스학원",
+        "ADDRESS1": "서울특별시 은평구 증산동 173-8",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9025353,
+          37.5989303
+        ]
+      },
+      "properties": {
+        "NAME": "새락골어린이공원",
+        "ADDRESS1": "서울특별시 은평구 은평로3가길 34",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9036502,
+          37.6040188
+        ]
+      },
+      "properties": {
+        "NAME": "초록길도서관",
+        "ADDRESS1": "서울 은평구 연서로5길 28",
+        "TEL": "02-357-7279",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9114754,
+          37.5975063
+        ]
+      },
+      "properties": {
+        "NAME": "은평민중의집 랄랄라",
+        "ADDRESS1": "서울 은평구 신사1동 25-6번지 예동빌딩 1층",
+        "TEL": "02-381-7397",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9077693,
+          37.5986262
+        ]
+      },
+      "properties": {
+        "NAME": "공간오즈(Oz)",
+        "ADDRESS1": "은평구 응암동 112-25 지하 1층",
+        "TEL": "",
+        "URL": "https://www.facebook.com/spaceoz/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9095439,
+          37.5940796
+        ]
+      },
+      "properties": {
+        "NAME": "꿈꾸는 다락방",
+        "ADDRESS1": "서울 은평구 응암로 248-1",
+        "TEL": "02-355-6398",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9069224,
+          37.5922139
+        ]
+      },
+      "properties": {
+        "NAME": "참대래장독대",
+        "ADDRESS1": "서울특별시 은평구 응암3동 583-22 2층",
+        "TEL": "",
+        "URL": "http://turnkey.blog.me/50162220932"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9143633,
+          37.5944715
+        ]
+      },
+      "properties": {
+        "NAME": "응암2동 주민아지트",
+        "ADDRESS1": "서울특별시 은평구 응암2동 229-13",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9154904,
+          37.5973498
+        ]
+      },
+      "properties": {
+        "NAME": "카페 오후2시",
+        "ADDRESS1": "서울 백련산로 133-1",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.913559,
+          37.6058765
+        ]
+      },
+      "properties": {
+        "NAME": "북앤카페 쿠아레",
+        "ADDRESS1": "서울 은평구 진흥로 101",
+        "TEL": "070-8880-7870",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9174766,
+          37.6028686
+        ]
+      },
+      "properties": {
+        "NAME": "이상한나라 헌책방",
+        "ADDRESS1": "서울 은평구 서오릉로 18",
+        "TEL": "070-7698-8903",
+        "URL": "http://2sangbook.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9221512,
+          37.6025812
+        ]
+      },
+      "properties": {
+        "NAME": "즐거운 반딧불이",
+        "ADDRESS1": "서울 은평구 녹번동 76-12호",
+        "TEL": "070-8223-7529",
+        "URL": "https://www.facebook.com/nokbunfirefly"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9265138,
+          37.6006547
+        ]
+      },
+      "properties": {
+        "NAME": "반짝반짝 사진관",
+        "ADDRESS1": "서울 은평구 은평로 248",
+        "TEL": "02-358-3478",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9091499,
+          37.6104918
+        ]
+      },
+      "properties": {
+        "NAME": "살림의료사회적 협동조합 다짐",
+        "ADDRESS1": "서울 은평구 서오릉로 131 (역촌동, 구산빌딩) 2층",
+        "TEL": "02-6014-9949",
+        "URL": "www.salimhealthcoop.or.kr"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.908699,
+          37.6108139
+        ]
+      },
+      "properties": {
+        "NAME": "살림의료사회적 협동조합 살림의원",
+        "ADDRESS1": "서울 은평구 서오릉로 139 (역촌동, 주영빌딩) 3층",
+        "TEL": "02-6014-9949",
+        "URL": "www.salimhealthcoop.or.kr"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9078822,
+          37.6144987
+        ]
+      },
+      "properties": {
+        "NAME": "마을예술창작소 별별곳간",
+        "ADDRESS1": "서울 은평구 갈현동 466-1",
+        "TEL": "070-7363-3335",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9042414,
+          37.6096214
+        ]
+      },
+      "properties": {
+        "NAME": "구산동도서관마을",
+        "ADDRESS1": "서울특별시 은평구 연서로 13길 29-23 구립구산동도서관마을",
+        "TEL": "02-357-0100",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9052478,
+          37.6009293
+        ]
+      },
+      "properties": {
+        "NAME": "한빛마을센터",
+        "ADDRESS1": "서울시 은평구 역촌동 84-46 한빛마을센터",
+        "TEL": "02-359-8111",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9086396,
+          37.6176493
+        ]
+      },
+      "properties": {
+        "NAME": "복합문화공간 틈",
+        "ADDRESS1": "서울 은평구 연서로27길 13-10",
+        "TEL": "070-7799-4130",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9078851,
+          37.623663
+        ]
+      },
+      "properties": {
+        "NAME": "갈곡리다문화사랑방",
+        "ADDRESS1": "서울특별시 은평구 갈현로 301 갈현1동청사및문화의집",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9078851,
+          37.623663
+        ]
+      },
+      "properties": {
+        "NAME": "갈현1동 녹색가게",
+        "ADDRESS1": "서울특별시 은평구 갈현로 301 갈현1동청사및문화의집",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9180158,
+          37.6277624
+        ]
+      },
+      "properties": {
+        "NAME": "향림도시농업체험원",
+        "ADDRESS1": "서울특별시 은평구 불광동 458-1",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9189223,
+          37.621524
+        ]
+      },
+      "properties": {
+        "NAME": "산아래카페",
+        "ADDRESS1": "서울시 은평구 불광동 130-2 2층",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9222799,
+          37.6423996
+        ]
+      },
+      "properties": {
+        "NAME": "물푸레 북카페",
+        "ADDRESS1": "서울특별시 은평구 진관4로 48-51",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9094597,
+          37.6442226
+        ]
+      },
+      "properties": {
+        "NAME": "금암문화공원",
+        "ADDRESS1": "서울시 은평구 진관내동 428번지",
+        "TEL": "",
+        "URL": ""
+      }
+    }
+  ]
+}

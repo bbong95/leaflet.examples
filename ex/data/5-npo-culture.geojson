@@ -1,0 +1,181 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.920801,
+          37.592237
+        ]
+      },
+      "properties": {
+        "NAME": "흰돌회",
+        "ADDRESS1": "서울특별시 은평구 응암동 731-17",
+        "TEL": "02-372-5905",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.928868,
+          37.601936
+        ]
+      },
+      "properties": {
+        "NAME": "(사)초록캠프",
+        "ADDRESS1": "서울특별시 은평구 녹번동 195",
+        "TEL": "02-387-7708",
+        "URL": "http://ghelp.or.kr"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.930928,
+          37.602567
+        ]
+      },
+      "properties": {
+        "NAME": "서울영상집단",
+        "ADDRESS1": "서울시 은평구 은평로 21길 32(17/1) 엠에스홈 401호",
+        "TEL": "02-745-4641",
+        "URL": "http://www.lookdocu.com"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.931807,
+          37.606691
+        ]
+      },
+      "properties": {
+        "NAME": "터울림",
+        "ADDRESS1": "서울특별시 은평구 녹번동 110-1",
+        "TEL": "02-354-7302",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.938862,
+          37.60964
+        ]
+      },
+      "properties": {
+        "NAME": "한국여성의전화",
+        "ADDRESS1": "서울특별시 은평구 녹번동 1-15",
+        "TEL": "02-3156-5400",
+        "URL": "http://www.hotline.or.kr"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9306804,
+          37.610659
+        ]
+      },
+      "properties": {
+        "NAME": "은평늘봄장애인자립생활센터",
+        "ADDRESS1": "서울 은평구 불광로 40-9 갤럭시타운 301호",
+        "TEL": "070-8750-1724",
+        "URL": "http://nbcil.or.kr"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.927222,
+          37.645135
+        ]
+      },
+      "properties": {
+        "NAME": "에코상상사업단",
+        "ADDRESS1": "서울특별시 은평구 진관동 상림마을 아이파크 742동 1층",
+        "TEL": "02-381-9410",
+        "URL": "http://cafe.daum.net/ecosangsang/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9170523,
+          37.6125918
+        ]
+      },
+      "properties": {
+        "NAME": "(사)어린이도서연구회 은평지회",
+        "ADDRESS1": "서울특별시 은평구 연서로17길 4",
+        "TEL": "",
+        "URL": "http://cafe.daum.net/childbook63"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.916924,
+          37.6122204
+        ]
+      },
+      "properties": {
+        "NAME": "갈현 은평장애인자립생활센터",
+        "ADDRESS1": "서울특별시 은평구 갈현2동 492-8",
+        "TEL": "02-374-0818",
+        "URL": "http://www.ecil.co.kr"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.917359,
+          37.603192
+        ]
+      },
+      "properties": {
+        "NAME": "미닫이공작소",
+        "ADDRESS1": "은평구 역촌동 33-16",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.925545,
+          37.602989
+        ]
+      },
+      "properties": {
+        "NAME": "은평씨앗학교",
+        "ADDRESS1": "서울특별시 은평구 녹번동 155-13 4층",
+        "TEL": "02-384-3518",
+        "URL": "http://www.seedschool.net"
+      }
+    }
+  ]
+}

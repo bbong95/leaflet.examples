@@ -1,0 +1,133 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.922079,
+          37.643616
+        ]
+      },
+      "properties": {
+        "NAME": "책뜰도서관 ",
+        "ADDRESS1": "서울 은평구 북한산로 2 ",
+        "TEL": "02-355-6893",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.929023,
+          37.644132
+        ]
+      },
+      "properties": {
+        "NAME": "상림작은마을도서관",
+        "ADDRESS1": "서울 은평구 진관4로 48-51",
+        "TEL": "02-351-3995",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.923916,
+          37.633327
+        ]
+      },
+      "properties": {
+        "NAME": "마고정작은도서관",
+        "ADDRESS1": "서울 은평구 진관2로 60",
+        "TEL": "02-353-1346",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.913685,
+          37.634284
+        ]
+      },
+      "properties": {
+        "NAME": "꿈틀마을공작소 꿈지락도서관 ",
+        "ADDRESS1": "서울 은평구 진관1로 77-8",
+        "TEL": "02-351-5184",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.920784,
+          37.614212
+        ]
+      },
+      "properties": {
+        "NAME": "대조꿈나무어린이도서관 ",
+        "ADDRESS1": "서울 은평구 연서로20길 24-6",
+        "TEL": "02-351-5184",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.912953,
+          37.609723
+        ]
+      },
+      "properties": {
+        "NAME": "구산동도서관마을",
+        "ADDRESS1": "서울특별시 은평구 구산동 17-37",
+        "TEL": "070-4960-0808",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.918163,
+          37.640044
+        ]
+      },
+      "properties": {
+        "NAME": "공동육아라미",
+        "ADDRESS1": "서울특별시 은평구 진관4로 48-17 10단지 1001동",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.923972,
+          37.643811
+        ]
+      },
+      "properties": {
+        "NAME": "은아향캐슬문고 ",
+        "ADDRESS1": "서울특별시 은평구 진관동 진관3로 은평뉴타운상림마을1단지아파트 810동",
+        "TEL": "",
+        "URL": ""
+      }
+    }
+  ]
+}

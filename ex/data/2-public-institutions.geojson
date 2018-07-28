@@ -1,0 +1,213 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.894961,
+          37.581953
+        ]
+      },
+      "properties": {
+        "NAME": "은평음악창작지원센터",
+        "ADDRESS1": "서울시 은평구 수색동 380-1",
+        "TEL": "02-304-1457",
+        "URL": "http://epmc.kr/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.921746,
+          37.588278
+        ]
+      },
+      "properties": {
+        "NAME": "은평교육복지센터",
+        "ADDRESS1": "서울시 은평구 가좌로6길 20 서울응암초등학교 별관 3층",
+        "TEL": "02-355-1859",
+        "URL": "https://www.facebook.com/ephappydream/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.921746,
+          37.588278
+        ]
+      },
+      "properties": {
+        "NAME": "은평마을교육자원센터",
+        "ADDRESS1": "서울시 은평구 가좌로6길 20 서울응암초등학교 별관 3층",
+        "TEL": "02-3152-5522",
+        "URL": "http://www.epsmiletown.com/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.912187,
+          37.598023
+        ]
+      },
+      "properties": {
+        "NAME": "신사종합사회복지관",
+        "ADDRESS1": "서울시 은평구 은평로38(신사1동 26-18) 신사종합사회복지관",
+        "TEL": "02-376-4141",
+        "URL": "http://sscc.or.kr/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.9245904,
+          37.6008908
+        ]
+      },
+      "properties": {
+        "NAME": "신나는애프터센터",
+        "ADDRESS1": "서울시 은평구 연서로 6길 7 (역촌동 23-22번지) 신나는애프터센터 은평구청소년문화의집",
+        "TEL": "02-353-7910",
+        "URL": "http://www.epyouth.org"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.921159,
+          37.607761
+        ]
+      },
+      "properties": {
+        "NAME": "은평구평생학습관",
+        "ADDRESS1": "서울시 은평구 서오릉로 87(역촌동)",
+        "TEL": "070-8933-9901~2",
+        "URL": "https://edu.eunpyeong.go.kr/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.927808,
+          37.603608
+        ]
+      },
+      "properties": {
+        "NAME": "은평문화예술회관",
+        "ADDRESS1": "서울시 은평구 녹번로 16",
+        "TEL": "02-350-5222",
+        "URL": "http://www.efmc.or.kr/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.929252,
+          37.602789
+        ]
+      },
+      "properties": {
+        "NAME": "은평구청",
+        "ADDRESS1": "서울시 은평구 은평로 195(녹번동)",
+        "TEL": "02)351-6041~5",
+        "URL": "http://www.ep.go.kr/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.933475,
+          37.60704
+        ]
+      },
+      "properties": {
+        "NAME": "서울시어르신돌봄종사자 종합지원센터",
+        "ADDRESS1": "서울시 은평구통일로 680 대일빌딩 2층(녹번동)",
+        "TEL": "1544-7315",
+        "URL": "http://www.dolbom.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.927672,
+          37.621528
+        ]
+      },
+      "properties": {
+        "NAME": "은평공유센터",
+        "ADDRESS1": "서울시 은평구 연서로 34길 11",
+        "TEL": "02-358-0606",
+        "URL": "http://www.epshare.org/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.940125,
+          37.644133
+        ]
+      },
+      "properties": {
+        "NAME": "셋이서문학관",
+        "ADDRESS1": "서울시 은평구 진관동 135-5",
+        "TEL": "02-355-5800",
+        "URL": "http://www.ep.go.kr/CmsWeb/viewPage.req?idx=PG0000003385"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.938041,
+          37.640369
+        ]
+      },
+      "properties": {
+        "NAME": "은평역사한옥박물관",
+        "ADDRESS1": "서울시 은평구 진관동 135-5",
+        "TEL": "02-351-8523~4",
+        "URL": "http://museum.ep.go.kr/"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.933055,
+          37.637221
+        ]
+      },
+      "properties": {
+        "NAME": "은평뉴타운도서관",
+        "ADDRESS1": "서울시 은평구 진관2로 111-51 (진관동 93)",
+        "TEL": "02-6341-6400",
+        "URL": "http://www.enlib.or.kr/"
+      }
+    }
+  ]
+}

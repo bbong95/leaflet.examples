@@ -1,0 +1,69 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.908424,
+          37.586776
+        ]
+      },
+      "properties": {
+        "NAME": "쉐어하우스 공가 1호집",
+        "ADDRESS1": "서울시 은평구 증산동 202-25",
+        "TEL": "02-383-2025",
+        "URL": "www.gongga.kr"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.914145,
+          37.589001
+        ]
+      },
+      "properties": {
+        "NAME": "쉐어하우스 공가 2호집",
+        "ADDRESS1": "서울시 은평구 응암동 591-16번지",
+        "TEL": "02-383-2025",
+        "URL": "www.gongga.kr"
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.919451,
+          37.627118
+        ]
+      },
+      "properties": {
+        "NAME": "갈현희망하우징",
+        "ADDRESS1": "서울시 은평구 통일로 943",
+        "TEL": "",
+        "URL": ""
+      }
+    },
+    {
+      "type": "Feature",
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.934709,
+          37.622059
+        ]
+      },
+      "properties": {
+        "NAME": "구름정원사람들",
+        "ADDRESS1": "서울시 은평구 불광동 23",
+        "TEL": "",
+        "URL": ""
+      }
+    }
+  ]
+}

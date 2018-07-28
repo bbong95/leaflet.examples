@@ -1,0 +1,73 @@
+{
+  "type": "FeatureCollection",
+  "features": [
+    {
+      "type": "Feature",
+      "id": 0,
+      "properties": {
+        "NAME": "은평상상허브",
+        "TEL": "02-355-7913",
+        "URL": "http://ephub.net",
+        "ADDRESS1": "서울시 은평구 은평로 245 3층",
+        "ADDRESS2": null,
+        "CITY": "서울"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.934999,
+          37.601122
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 1,
+      "properties": {
+        "NAME": "서울시 마을공동체 종합지원센터",
+        "TEL": "02-385-2642",
+        "URL": "http://www.seoulmaeul.org",
+        "ADDRESS1": "서울특별시 은평구 통일로 684, 8동 3층",
+        "ADDRESS2": null,
+        "CITY": "서울"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.933206,
+          37.6084167
+        ]
+      }
+    },
+    {
+      "type": "Feature",
+      "id": 2,
+      "properties": {
+        "NAME": "서울혁신파크",
+        "TEL": "02-389-7512",
+        "URL": "http://innovationpark.kr",
+        "ADDRESS1": "서울시 은평구 녹번동 통일로 684",
+        "ADDRESS2": null,
+        "CITY": "서울"
+      },
+      "geometry": {
+        "type": "Point",
+        "coordinates": [
+          126.933753,
+          37.608416
+        ]
+      }
+    }
+
+  ]
+}
+
+
+
+
+
+
+
+
+
+
