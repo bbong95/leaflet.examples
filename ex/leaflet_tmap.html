@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <meta http-equiv="content-language" content="ko"/>
+  <title>Leaflet Korean TMS Providers</title>
+
+	<!--STEP 1: CSS 추가하기 -->
+	<!--CDN 방식 -->
+	<!--<link rel="stylesheet" href="https://unpkg.com/leaflet@1.3.3/dist/leaflet.css"/>-->
+	<!-- Download 방식 -->
+	<link rel="stylesheet" href="css/leaflet@1.3.3/leaflet.css"/>
+	<!--STEP 3: 지도 영역 관련 CSS 추가하기 -->
+	<link rel="stylesheet" href="css/main.css"/>
+	<!--STEP 2: JS 추가하기 -->
+	<!--CDN 방식 -->
+	<!--<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>-->
+	<!-- Download 방식 -->
+	<script src="js/leaflet@1.3.3/leaflet.js"></script>
+	 <!-- Leaflet Plugins: Leaflet.KoreanTmsProviders 추가  -->
+	<script src="js/KoreanTmsProviders/lib/proj4.js"></script>
+	<script src="js/KoreanTmsProviders/lib/proj4leaflet.js"></script>
+	<script src="js/KoreanTmsProviders/src/Leaflet.KoreanTmsProviders.js"></script>  
+</head>
+<body>
+  <div id="map" class="map"></div>
+
+  <script type="text/javascript">
+    var map = new L.Map('map', {
+      center: new L.LatLng(36.1358642, 128.0785804),
+      zoom: 1, 
+      crs: L.Proj.CRS.TMap,
+      worldCopyJump: false,      
+    });
+
+    var hybridMap = L.tileLayer.koreaProvider('TMap.Hybrid');
+
+    var baseLayers = {
+      'TMap Street Map' : L.tileLayer.koreaProvider('TMap.Street').addTo(map),
+      'TMap Satellite Map': L.tileLayer.koreaProvider('TMap.Satellite'),
+      'TMap Gray Map': L.tileLayer.koreaProvider('TMap.Gray'),
+      'TMap Midnight Map': L.tileLayer.koreaProvider('TMap.Midnight')
+    };
+
+    var layerControl = L.control.layers(baseLayers, {}, {
+      collapsed: false
+    }).addTo(map);
+    
+    L.control.scale().addTo(map); 
+    
+    map.on('baselayerchange', function (e) {
+      if (e.name === 'TMap Satellite Map') {
+        layerControl.addOverlay(hybridMap, 'TMap Hybrid Map');
+      } else {
+        if (map.hasLayer(hybridMap)) map.removeLayer(hybridMap);
+        layerControl.removeLayer(hybridMap);
+      }
+    });
+  </script>
+</body>
+</html>

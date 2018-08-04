@@ -15,24 +15,23 @@
 	<!--<script src="https://unpkg.com/leaflet@1.3.3/dist/leaflet.js"></script>-->
 	<!-- Download 방식 -->
 	<script src="js/leaflet@1.3.3/leaflet.js"></script>
+	 <!-- Leaflet Plugins: Leaflet.KoreanTmsProviders 추가  -->
+	<script src="js/KoreanTmsProviders/lib/proj4.js"></script>
+	<script src="js/KoreanTmsProviders/lib/proj4leaflet.js"></script>
+	<script src="js/KoreanTmsProviders/src/Leaflet.KoreanTmsProviders.js"></script>  
 </head>
 
 <body>
 	<!-- 배경지도 영역 추가하기-->
 	<div id="map" class="map"></div>
 	<script>
-		var lat = 36.1358642; //위도
-		var lng = 128.0785804; //경도
-		var zoom = 7; //줌 레벨
-		var mymap = L.map('map', {
-			center: [lat, lng],
-			zoom: zoom
+		var map = new L.Map('map', {
+			  center: new L.LatLng(36.1358642, 128.0785804), //중심점 : 김천 위경도 좌표
+			  zoom: 0.5,	//Leaflet.KoreanTmsProviders.js : resolutions기준 줌 레벨(Level 12)
+			  crs: L.Proj.CRS.Daum, //Leaflet.KoreanTmsProviders.js : 새로 정의된 Daum Map CRS
+			  worldCopyJump: false,  //https://leafletjs.com/reference-1.3.2.html#map-worldcopyjump 참조    
 		});
-		//L.tileLayer('http://xdworld.vworld.kr:8080/2d/Base/service/{z}/{x}/{y}.png').addTo(mymap); //브이월드 지도
-		//L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png').addTo(mymap); //OSM
-		L.tileLayer('https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png', {
-			attribution: '&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors' //화면 오른쪽 하단 attributors
-		}).addTo(mymap);
+		var baseLayers = L.tileLayer.koreaProvider('DaumMap.Street').addTo(map);
 	</script>
 </body>
 

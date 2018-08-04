@@ -37,6 +37,8 @@
   
 	L.Proj.CRS.VWorld = L.CRS.EPSG3857;
 
+	L.Proj.CRS.TMap = L.CRS.EPSG3857;
+
 	L.TileLayer.KoreaProvider = L.TileLayer.extend({
 
 		initialize: function (arg, options) {
@@ -127,41 +129,70 @@
 	//jshint maxlen:220
 	L.TileLayer.KoreaProvider.providers = {
 		DaumMap: {
-			url: 'http://map{s}.daumcdn.net/map_2d/2jap/L{z}/{y}/{x}.png',
+			url: 'http://map{s}.daumcdn.net/map_2d/1807hsm/L{z}/{y}/{x}.png',
 			crs: L.Proj.CRS.Daum,
 			options: {
 				maxZoom: 13, 
 				minZoom: 0,
-				zoomReverse: true, //���������� ���� 13(���ô) -> ���� 0(����ô)���� �پ��
+				zoomReverse: true, //다음지도는 레벨 13(小축척) -> 레벨 0(大축척)으로 줄어듦
 				zoomOffset: 1,
 				subdomains: '0123',
 				continuousWorld: true,
 				tms: true,
-				attribution: 'Map data &copy; <strong>DaumMap</strong>'
+				attribution: 'Map data &copy; <a href="http://map.daum.net//"><strong>Daum Map</strong></a>'
 			},
 			variants: {
-				Street: {},
-				Satellite: {
+				Street: {}, //일반지도(Standard Road Map)
+				/*Satellite: { //사용하지 않음(위성지도는 SkyView로 사용)
 					url: 'http://s{s}.maps.daum-img.net/L{z}/{y}/{x}.jpg'
+				},*/
+				Cadastral: { //지적편집도(Cadastral)
+					url: 'http://map{s}.daumcdn.net/map_usedistrict/1807hsm/L{z}/{y}/{x}.png'
 				},
-				Cadastral: {
-					url: 'http://map{s}.daumcdn.net/map_usedistrict/2jap/L{z}/{y}/{x}.png'
+				BBoundary: { //법정동경계지도
+					url: 'http://boundary.map.daum.net/mapserver/db/BBOUN_L/L{z}/{y}/{x}.png'
 				},
-				Physical: { 
-					url: 'http://map{s}.daumcdn.net/map_shaded_relief/2.00/L{z}/{y}/{x}.png'
+				HBoundary: { //행정동경계지도
+					url: 'http://boundary.map.daum.net/mapserver/db/HBOUN_L/L{z}/{y}/{x}.png'
+				},
+				Physical: { //지형도(Terrain Map)
+					url: 'http://map{s}.daumcdn.net/map_shaded_relief/3.00/L{z}/{y}/{x}.png' 
 				},				
-				Hybrid: {
-					url: 'http://map{s}.daumcdn.net/map_hybrid/2jap/L{z}/{y}/{x}.png'								 
+				Hybrid: { //위성지도+라벨 중첩지도(Hybrid)
+					url: 'http://map{s}.daumcdn.net/map_hybrid/1807hsm/L{z}/{y}/{x}.png'								 
 				},
-				SkyView: {
-					url: 'http://map{s}.daumcdn.net/map_skyview/L{z}/{y}/{x}.jpg?v=160114'
+				SkyView: { //위성지도(Satellite Only) : Daum Map에서는 스카이뷰로 사용됨
+					url: 'http://map{s}.daumcdn.net/map_skyview/L{z}/{y}/{x}.jpg?v=160114' 
 				},
-				Bicycle: {
-					url: 'http://map{s}.daumcdn.net/map_bicycle/2d/3.00/L{z}/{y}/{x}.png'
-             //'http://map{s}.daumcdn.net/map_bicycle/hybrid/3.00/L{z}/{y}/{x}.png'
+				Bicycle: { //자전거도로지도(Bicycle)
+					url: 'http://map{s}.daumcdn.net/map_bicycle/2d/6.00/L{z}/{y}/{x}.png' 
 				},
-				Traffic: {
-					url: 'http://r{s}.maps.daum-img.net/mapserver/file/realtimeroad/L{z}/{y}/{x}.png'
+				Traffic: { //교통상황지도(Traffic)
+					url: 'http://r{s}.maps.daum-img.net/mapserver/file/realtimeroad/L{z}/{y}/{x}.png' 
+				},
+				FineDust: { //미세먼지지도
+					url: 'http://airinfo.map.kakao.com/mapserver/file/airinfo_pm10/T/L{z}/{y}/{x}.png'
+				},
+				YellowDust: { //황사지도
+					url: 'http://airinfo.map.kakao.com/mapserver/file/airinfo_ysnd/T/L{z}/{y}/{x}.png'
+				},
+				NO2: { //이산화질소지도
+					url: 'http://airinfo.map.kakao.com/mapserver/file/airinfo_no2/T/L{z}/{y}/{x}.png'
+				},
+				SO2: { //아황산가스지도
+					url: 'http://airinfo.map.kakao.com/mapserver/file/airinfo_so2/T/L{z}/{y}/{x}.png'
+				},
+				CAI: { //통합대기지수지도
+					url: 'http://airinfo.map.kakao.com/mapserver/file/airinfo_khai/T/L{z}/{y}/{x}.png'
+				},
+				PM25: { //초미세먼지지도
+					url: 'http://airinfo.map.kakao.com/mapserver/file/airinfo_pm25/T/L{z}/{y}/{x}.png'
+				},
+				O3: { //오존지도
+					url: 'http://airinfo.map.kakao.com/mapserver/file/airinfo_o3/T/L{z}/{y}/{x}.png'
+				},
+				CO: { //일산화탄소지도
+					url: 'http://airinfo.map.kakao.com/mapserver/file/airinfo_co/T/L{z}/{y}/{x}.png'
 				}
 			}
 		},
@@ -178,26 +209,26 @@
 				attribution: 'Map data &copy; <a href="https://map.naver.com/"><strong>Naver Map</strong></a>'
 			},
 			variants: {
-				Street: {},
-				Satellite: {
+				Street: {}, //일반지도(Standard Road Map)
+				Satellite: { //위성지도(Satellite Only)
 					url: 'https://simg.pstatic.net/onetile/get/195/0/1/{z}/{x}/{y}/bl_st_bg'					
 				}, 
-				Cadastral: {
+				Cadastral: { //지적편집도(Cadastral)
 					url: 'https://simg.pstatic.net/onetile/get/195/0/0/{z}/{x}/{y}/empty/ol_lp_cn'
 				},
-				Physical: {
+				Physical: { //지형도(Terrain Map)
 					url: 'https://simg.pstatic.net/onetile/get/195/0/0/{z}/{x}/{y}/bl_tn_bg/ol_vc_bg/ol_vc_an'
 				},
-				Hybrid: { 
+				Hybrid: { //위성지도+라벨 중첩지도(Hybrid)
 					url: 'https://simg.pstatic.net/onetile/get/195/0/0/{z}/{x}/{y}/empty/ol_st_rd/ol_st_an'
 				},
-				Bicycle: {
+				Bicycle: { //자전거도로지도(Bicycle)
 					url: 'https://simg.pstatic.net/onetile/get/195/0/0/{z}/{x}/{y}/empty/ol_bc_hb'
 				},
-				Traffic: {
+				Traffic: { //교통상황지도(Traffic)
 					url: 'https://simg.pstatic.net/onetile/get/195/201973/0/{z}/{x}/{y}/empty/ol_tr_rt/ol_vc_an'
 				},
-				StreetView: {
+				StreetView: { //거리뷰지도(Street View)
 					url: 'https://simg.pstatic.net/onetile/get/195/0/0/{z}/{x}/{y}/empty/ol_pn_rd/ol_vc_an?dv=1807.003'
 				}
 			}
@@ -212,6 +243,37 @@
 				minZoom: 6,
 				continuousWorld: true,
 				attribution: 'Map data &copy; <strong>VWorld</strong>'
+			},
+			variants: {
+				Street: {},
+				Satellite: {
+					//url: 'http://xdworld.vworld.kr:8080/2d/Satellite/201612/{z}/{x}/{y}.jpeg'
+					url: 'http://xdworld.vworld.kr:8080/2d/Satellite/service/{z}/{x}/{y}.jpeg'
+				},
+				Hybrid: {
+					//url: 'http://xdworld.vworld.kr:8080/2d/Hybrid/201512/{z}/{x}/{y}.png'
+					url: 'http://xdworld.vworld.kr:8080/2d/Hybrid/service/{z}/{x}/{y}.png'
+				},
+				Gray: {
+					//url: 'http://xdworld.vworld.kr:8080/2d/gray/201512/{z}/{x}/{y}.png'
+					url: 'http://xdworld.vworld.kr:8080/2d/gray/service/{z}/{x}/{y}.png'
+				},
+				Midnight: {
+					//url: 'http://xdworld.vworld.kr:8080/2d/midnight/201512/{z}/{x}/{y}.png'
+					url: 'http://xdworld.vworld.kr:8080/2d/midnight/service/{z}/{x}/{y}.png'
+				}
+			}
+		},
+		TMap: {
+			//url: 'http://xdworld.vworld.kr:8080/2d/Base/201612/{z}/{x}/{y}.png', 
+			//url: 'http://xdworld.vworld.kr:8080/2d/Base/201710/{z}/{x}/{y}.png',
+			url: 'http://topopentile2.tmap.co.kr/tms/1.0.0/hd_tile/{z}/{y}/{x}.png',
+			crs: L.Proj.CRS.TMap,
+			options: {
+				maxZoom: 18, 
+				minZoom: 0,
+				continuousWorld: true,
+				attribution: 'Map data &copy; <strong>TMap</strong>'
 			},
 			variants: {
 				Street: {},
