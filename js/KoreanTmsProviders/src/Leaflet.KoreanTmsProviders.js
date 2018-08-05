@@ -12,6 +12,7 @@
 }(this, function (L) {
 	'use strict';
 
+	//다음지도 좌표계 정의
 	L.Proj.CRS.Daum = new L.Proj.CRS(
 		'EPSG:5181',
     '+proj=tmerc +lat_0=38 +lon_0=127 +k=1 +x_0=200000 +y_0=500000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs',
@@ -25,6 +26,7 @@
     }          
  	);
 
+	//네이버지도 좌표계 정의
 	L.Proj.CRS.Naver = new L.Proj.CRS(
 		'EPSG:5179',
     '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs',
@@ -35,8 +37,16 @@
     }
 	);
   
+	//vWorld 지도 좌표계 정의
 	L.Proj.CRS.VWorld = L.CRS.EPSG3857;
 
+	//Google Map 좌표계 정의
+	L.Proj.CRS.Google = L.CRS.EPSG3857;
+
+	//OSM 좌표계 정의
+	L.Proj.CRS.OSM = L.CRS.EPSG3857;
+
+	//T Map 좌표계 정의
 	L.Proj.CRS.TMap = L.CRS.EPSG3857;
 
 	L.TileLayer.KoreaProvider = L.TileLayer.extend({
@@ -128,6 +138,7 @@
 
 	//jshint maxlen:220
 	L.TileLayer.KoreaProvider.providers = {
+		//다음지도 Tile URL
 		DaumMap: {
 			url: 'http://map{s}.daumcdn.net/map_2d/1807hsm/L{z}/{y}/{x}.png',
 			crs: L.Proj.CRS.Daum,
@@ -196,6 +207,7 @@
 				}
 			}
 		},
+		//네이버지도 Tile URL
 		NaverMap: {
 			url: 'https://simg.pstatic.net/onetile/get/195/0/0/{z}/{x}/{y}/bl_vc_bg/ol_vc_an',
 			crs: L.Proj.CRS.Naver, 
@@ -233,6 +245,7 @@
 				}
 			}
 		},
+		//vWorld 지도 Tile URL
 		VWorld: {
 			//url: 'http://xdworld.vworld.kr:8080/2d/Base/201612/{z}/{x}/{y}.png', 
 			//url: 'http://xdworld.vworld.kr:8080/2d/Base/201710/{z}/{x}/{y}.png',
@@ -264,6 +277,63 @@
 				}
 			}
 		},
+		//OSM Tile URL
+		OSM: {
+			url: 'https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png',
+			crs: L.Proj.CRS.OSM,
+			options: {
+				maxZoom: 19, 
+				minZoom: 0,
+				continuousWorld: true,
+				attribution: 'Map data &copy; <strong>OSM</strong>'
+			},
+			variants: {
+				Street: {},
+				/*Satellite: {
+					//url: 'http://xdworld.vworld.kr:8080/2d/Satellite/201612/{z}/{x}/{y}.jpeg'
+					url: 'http://xdworld.vworld.kr:8080/2d/Satellite/service/{z}/{x}/{y}.jpeg'
+				},
+				Hybrid: {
+					//url: 'http://xdworld.vworld.kr:8080/2d/Hybrid/201512/{z}/{x}/{y}.png'
+					url: 'http://xdworld.vworld.kr:8080/2d/Hybrid/service/{z}/{x}/{y}.png'
+				},*/
+				Gray: {
+					url: 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/light_all/{z}/{x}/{y}.png'
+				},
+				Dark: {
+					//url: 'http://xdworld.vworld.kr:8080/2d/midnight/201512/{z}/{x}/{y}.png'
+					url: 'https://cartodb-basemaps-{s}.global.ssl.fastly.net/dark_nolabels/{z}/{x}/{y}.png'
+				}
+			}
+		},
+		//Google Map Tile URL
+		GoogleMap: {
+			url: 'https://mt{s}.google.com/vt/lyrs=m&hl=kr&x={x}&y={y}&z={z}',
+			crs: L.Proj.CRS.Google,
+			options: {
+				maxZoom: 19, 
+				minZoom: 0,
+				subdomains: '0123',
+				continuousWorld: true,
+				attribution: '&copy; <a target="_blank" href="https://maps.google.com/maps?ll=36.1358642,128.0785804&amp;z=13&amp;t=m&amp;hl=ko-KR&amp;gl=US&amp;mapclient=apiv3" title="Google 지도에서 이 지역을 보려면 클릭하세요." ><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false"></a>'
+			},
+			variants: {
+				Street: {},
+				Satellite: {
+					url: 'https://mt{s}.google.com/vt/lyrs=s&hl=kr&x={x}&y={y}&z={z}'
+				},
+				Hybrid: {
+					url: 'https://mt{s}.google.com/vt/lyrs=y&hl=kr&x={x}&y={y}&z={z}'
+				},
+				Terrain: {
+					url: 'https://mt{s}.google.com/vt/lyrs=p&hl=kr&x={x}&y={y}&z={z}'
+				},
+				ARoad: {
+					url: 'https://mt{s}.google.com/vt/lyrs=r&hl=kr&x={x}&y={y}&z={z}'
+				}
+			}
+		},
+		//T Map Tile URL
 		TMap: {
 			//url: 'http://xdworld.vworld.kr:8080/2d/Base/201612/{z}/{x}/{y}.png', 
 			//url: 'http://xdworld.vworld.kr:8080/2d/Base/201710/{z}/{x}/{y}.png',
