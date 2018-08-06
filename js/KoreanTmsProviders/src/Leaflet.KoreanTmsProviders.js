@@ -147,7 +147,7 @@
 				minZoom: 0,
 				zoomReverse: true, //다음지도는 레벨 13(小축척) -> 레벨 0(大축척)으로 줄어듦
 				zoomOffset: 1,
-				subdomains: '0123',
+				subdomains: '0123', //다음지도 Tile Map 서버 4EA : map0, map1, map2, map3
 				continuousWorld: true,
 				tms: true,
 				attribution: 'Map data &copy; <a target="_blank" href="http://map.daum.net/" title="Daum 지도로 보시려면 클릭하세요." style="float: right; width: 38px; height: 17px; cursor: pointer;"><img src="http://t1.daumcdn.net/localimg/localimages/07/mapjsapi/m_bi.png" alt="Daum 지도로 이동" style="width: 37px; height: 18px; border: none;"></a>'
@@ -318,7 +318,7 @@
 				minZoom: 0,
 				subdomains: '0123',
 				continuousWorld: true,
-				attribution: '&copy; <a target="_blank" href="https://maps.google.com/maps?ll=36.1358642,128.0785804&amp;z=13&amp;t=m&amp;hl=ko-KR&amp;gl=US&amp;mapclient=apiv3" title="Google 지도에서 이 지역을 보려면 클릭하세요." ><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false"></a>'
+				attribution: 'Map data &copy; <a target="_blank" href="https://maps.google.com/maps?ll=36.1358642,128.0785804&amp;z=13&amp;t=m&amp;hl=ko-KR&amp;gl=US&amp;mapclient=apiv3" title="Google 지도에서 이 지역을 보려면 클릭하세요." ><img alt="" src="https://maps.gstatic.com/mapfiles/api-3/images/google4.png" draggable="false"></a>'
 			},
 			variants: {
 				Street: {},
