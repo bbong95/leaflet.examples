@@ -46,7 +46,7 @@
 	//OSM 좌표계 정의
 	L.Proj.CRS.OSM = L.CRS.EPSG3857;
 
-	//T Map 좌표계 정의
+	//T Map 좌표계 정의(TMap이 과연 3857인가?)
 	L.Proj.CRS.TMap = L.CRS.EPSG3857;
 
 	L.TileLayer.KoreaProvider = L.TileLayer.extend({
@@ -150,7 +150,7 @@
 				subdomains: '0123',
 				continuousWorld: true,
 				tms: true,
-				attribution: 'Map data &copy; <a href="http://map.daum.net//"><strong>Daum Map</strong></a>'
+				attribution: 'Map data &copy; <a target="_blank" href="http://map.daum.net/" title="Daum 지도로 보시려면 클릭하세요." style="float: right; width: 38px; height: 17px; cursor: pointer;"><img src="http://t1.daumcdn.net/localimg/localimages/07/mapjsapi/m_bi.png" alt="Daum 지도로 이동" style="width: 37px; height: 18px; border: none;"></a>'
 			},
 			variants: {
 				Street: {}, //일반지도(Standard Road Map)
@@ -180,6 +180,9 @@
 				},
 				Traffic: { //교통상황지도(Traffic)
 					url: 'http://r{s}.maps.daum-img.net/mapserver/file/realtimeroad/L{z}/{y}/{x}.png' 
+				},
+				RoadView: { //로드뷰)
+					url: 'http://map{s}.daumcdn.net/map_roadviewline/7.00/L{z}/{y}/{x}.png' 
 				},
 				FineDust: { //미세먼지지도
 					url: 'http://airinfo.map.kakao.com/mapserver/file/airinfo_pm10/T/L{z}/{y}/{x}.png'
@@ -335,14 +338,13 @@
 		},
 		//T Map Tile URL
 		TMap: {
-			//url: 'http://xdworld.vworld.kr:8080/2d/Base/201612/{z}/{x}/{y}.png', 
-			//url: 'http://xdworld.vworld.kr:8080/2d/Base/201710/{z}/{x}/{y}.png',
-			url: 'http://topopentile2.tmap.co.kr/tms/1.0.0/hd_tile/{z}/{y}/{x}.png',
+			url: 'http://topopentile{s}.tmap.co.kr/tms/1.0.0/hd_tile/{z}/{y}/{x}.png',
 			crs: L.Proj.CRS.TMap,
 			options: {
 				maxZoom: 18, 
 				minZoom: 0,
-				continuousWorld: true,
+				subdomains: '123',
+				continuousWorld: false,
 				attribution: 'Map data &copy; <strong>TMap</strong>'
 			},
 			variants: {
