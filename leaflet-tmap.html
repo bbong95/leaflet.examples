@@ -31,7 +31,7 @@
   <script type="text/javascript">
     var map = new L.Map('map', {
       center: new L.LatLng(36.1358642, 128.0785804),
-      zoom: 0, 
+      zoom: 7, 
       crs: L.Proj.CRS.TMap,
       worldCopyJump: false,      
     });
@@ -39,10 +39,10 @@
     var hybridMap = L.tileLayer.koreaProvider('TMap.Hybrid');
 
     var baseLayers = {
-      'TMap Street Map' : L.tileLayer.koreaProvider('TMap.Street').addTo(map),
-      'TMap Satellite Map': L.tileLayer.koreaProvider('TMap.Satellite'),
-      'TMap Gray Map': L.tileLayer.koreaProvider('TMap.Gray'),
-      'TMap Midnight Map': L.tileLayer.koreaProvider('TMap.Midnight')
+      'TMap Street Map' : L.tileLayer.koreaProvider('TMap.Street').addTo(map)
+      //'TMap Satellite Map': L.tileLayer.koreaProvider('TMap.Satellite'),
+      //'TMap Gray Map': L.tileLayer.koreaProvider('TMap.Gray'),
+      //'TMap Midnight Map': L.tileLayer.koreaProvider('TMap.Midnight')
     };
 
     var layerControl = L.control.layers(baseLayers, {}, {

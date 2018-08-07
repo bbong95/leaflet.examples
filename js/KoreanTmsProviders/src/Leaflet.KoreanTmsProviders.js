@@ -18,6 +18,7 @@
     '+proj=tmerc +lat_0=38 +lon_0=127 +k=1 +x_0=200000 +y_0=500000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs',
     {
       resolutions: [2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1, 0.5, 0.25],
+	  //[-30000, -60000, 494288, 464288],
       origin: [-30000, -60000],
 											// West					 // South							 // East						 // North
       //bounds: L.bounds([-30000-Math.pow(2,19)*2, -60000-Math.pow(2, 19)*2], [-30000+Math.pow(2,19)*3, -60000+Math.pow(2, 19)*3])
@@ -32,6 +33,7 @@
     '+proj=tmerc +lat_0=38 +lon_0=127.5 +k=0.9996 +x_0=1000000 +y_0=2000000 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs',
     {
       resolutions: [2048, 1024, 512, 256, 128, 64, 32, 16, 8, 4, 2, 1, 0.5, 0.25],
+	  //[90112, 1192896, 1990673, 2761664],
       origin: [90112, 1192896],
       bounds: L.bounds([90112, 1192896], [1990673, 2761664])
     }
@@ -39,6 +41,8 @@
   
 	//vWorld 지도 좌표계 정의
 	L.Proj.CRS.VWorld = L.CRS.EPSG3857;
+	//[-20037508.34, -20037508.34, 20037508.34, 20037508.34],
+	//resolutions: [156543.0339, 78271.517, 39135.7585, 19567.8793, 9783.93965, 4891.96983, 2445.98492, 1222.99246, 611.49623, 305.748115, 152.874058, 76.437029, 38.2185145, 19.1092573, 9.55462865, 4.77731433, 2.38865717, 1.19432859, 0.5971643, 0.29858215, 0.14929108]
 
 	//Google Map 좌표계 정의
 	L.Proj.CRS.Google = L.CRS.EPSG3857;
@@ -46,7 +50,7 @@
 	//OSM 좌표계 정의
 	L.Proj.CRS.OSM = L.CRS.EPSG3857;
 
-	//T Map 좌표계 정의(TMap이 과연 3857인가?)
+	//T Map 좌표계 정의
 	L.Proj.CRS.TMap = L.CRS.EPSG3857;
 
 	L.TileLayer.KoreaProvider = L.TileLayer.extend({
@@ -338,11 +342,12 @@
 		},
 		//T Map Tile URL
 		TMap: {
-			url: 'http://topopentile{s}.tmap.co.kr/tms/1.0.0/hd_tile/{z}/{y}/{x}.png',
+			//TMap : -y 주의(y로 값을 주면 Tile이 위아래가 바뀌어 표시 되므로)
+			url: 'http://topopentile{s}.tmap.co.kr/tms/1.0.0/hd_tile/{z}/{x}/{-y}.png',
 			crs: L.Proj.CRS.TMap,
 			options: {
 				maxZoom: 18, 
-				minZoom: 0,
+				minZoom: 1,
 				subdomains: '123',
 				continuousWorld: false,
 				attribution: 'Map data &copy; <strong>TMap</strong>'
